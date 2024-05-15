@@ -1,16 +1,48 @@
-# biodiversity_taxonomy
+# Inclusion in Biodiversity Metadata: Vascular Plant Collection in The Chrysler Herbarium and Mycological Collections
 
+## Project Overview
+This project focuses on enhancing the integrity and usability of the vascular plant collection data from the Chrysler Herbarium and Mycological Collections at Rutgers University. The research aims to align the dataset with Darwin Core standards, reduce missing data, and analyze the dataset to uncover key insights about collectors, species distribution, and geographic trends.
 
-1. Background and Introduction:
-The proposed research on biodiversity taxonomies aligns seamlessly with my academic interests, extending from my metadata course project focused on standards. Through Dr. Cheng's courses, I gained insights into the complexities of organizing information, forming a solid foundation in metadata standards.
-The biodiversity taxonomies project aims to explore challenges in biodiversity data management, allowing me to contribute meaningfully to the scientific discourse.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Data Sources](#data-sources)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-2. Goals and Objectives:
-My primary goals in this project are to deepen my understanding of biodiversity taxonomies, enhance data cleaning and management skills using tools like OpenRefine and Python, and contribute to testing and comparing relevant toolkits. This aligns with my concentration in Data Science, offering a practical application to real-world challenges in biodiversity research.
+## Features
+- **Data Cleaning and Preparation**: Standardized inconsistent entries and performed comprehensive data cleaning.
+- **Missing Data Analysis**: Calculated and reduced the percentage of missing geospatial data.
+- **Darwin Core Alignment**: Compared dataset columns with Darwin Core terms to ensure standardization.
+- **Geospatial Data Integration**: Merged the dataset with external geospatial data to enhance completeness.
+- **Exploratory Data Analysis**: Visualized key insights about top species, collectors, and geographic distributions.
 
+## Data Sources
+- **Primary Dataset**: [Rutgers Chrysler Herbarium and Mycological Collections](https://herbarium.rutgers.edu/)
+- **External Geospatial Data**: Dataset used in a project by Santiago Nunez-Corrales, University of Illinois Urbana-Champaign
 
-3. Method or Approach:
-To execute the project, I plan a systematic approach: comprehensive literature review, hands-on data cleaning with OpenRefine and Python, and rigorous toolkit testing.
+## Methodology
+1. **Data Collection**: Downloaded dataset from the Rutgers Herbarium portal.
+2. **Data Cleaning**: Used OpenRefine for initial cleaning and clustering of inconsistent entries.
+3. **Missing Data Analysis**: Calculated the amount and percentage of missing data for each column.
+4. **Darwin Core Comparison**: Matched dataset columns with Darwin Core terms.
+5. **Geospatial Data Integration**: Merged with external geospatial data and updated missing coordinates.
+6. **Exploratory Data Analysis**: Conducted analysis to identify top species, collectors, and geographic distributions.
 
-4. Deliverables:
-Expected deliverables include a final report summarizing insights, challenges, and methodologies. Additionally, I aim to create a short paper or poster for conferences like iConference and ASIS&T, contributing to the academic community.
+## Results
+- **Data Enhancement**: Reduced missing geospatial data from 94.78% to 28.55%.
+- **Darwin Core Compliance**: Achieved 78% alignment with Darwin Core terms.
+- **Key Insights**: Identified top collectors (e.g., M.A. Chrysler), states (e.g., New Jersey), and species (e.g., Dryopteris Carthusiana).
+
+## Installation
+To run the analysis, clone this repository and install the required packages:
+
+```bash
+git clone https://github.com/yourusername/biodiversity-metadata-analysis.git
+cd biodiversity-metadata-analysis
+pip install -r requirements.txt
